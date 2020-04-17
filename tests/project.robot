@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation                                       This is basic test
-Library                                             Selenium2gitLibrary
+Library                                             Selenium2Library
 
 *** Variables ***
 
@@ -11,8 +11,8 @@ User can open login page
     open browser                                    https://demo30-qa.acceleratelearning.com    chrome
     maximize browser window
     set selenium speed                              0
-    Title Should Be                                 Stemscopes Science
-    [Teardown]    Close Browser
+    [Teardown]    Title Should Be                                 Stemscopes Science
+
 
 
 
