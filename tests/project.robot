@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation                                       This is basic test
-Library                                             Selenium2Library
+Library                                             SeleniumLibrary
 
 *** Variables ***
 
