@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on darwin)" generated="20200419 16:39:54.419" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on darwin)" generated="20200419 17:05:33.966" rpa="false">
 <suite id="s1" name="Smoke Test" source="/Users/dmitrytristen/.jenkins/workspace/RobotTestJob/smoke_test">
-<suite id="s1-s1" name="Login Teacher" source="/Users/dmitrytristen/.jenkins/workspace/RobotTestJob/smoke_test/login_teacher.robot">
+<suite id="s1-s1" name="Smoke Teacher" source="/Users/dmitrytristen/.jenkins/workspace/RobotTestJob/smoke_test/smoke_teacher.robot">
 <test id="s1-s1-t1" name="Login as a Teacher">
+<kw name="login_as_a_teacher" library="custom_keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${environment}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200419 16:39:54.696" level="INFO">Opening browser 'chrome' to base url 'https://demo30-qa.acceleratelearning.com'.</msg>
-<status status="PASS" starttime="20200419 16:39:54.695" endtime="20200419 16:40:04.069"></status>
+<msg timestamp="20200419 17:05:34.228" level="INFO">Opening browser 'chrome' to base url 'https://demo30-qa.acceleratelearning.com'.</msg>
+<status status="PASS" starttime="20200419 17:05:34.227" endtime="20200419 17:05:41.160"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200419 16:40:04.070" endtime="20200419 16:40:04.269"></status>
+<status status="PASS" starttime="20200419 17:05:41.161" endtime="20200419 17:05:41.372"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
@@ -31,14 +32,14 @@
 <arg>//*[@name='username']</arg>
 <arg>${teacher_credentials}</arg>
 </arguments>
-<msg timestamp="20200419 16:40:04.270" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
+<msg timestamp="20200419 17:05:41.372" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200419 16:40:04.817" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200419 16:40:04.285" endtime="20200419 16:40:04.818"></status>
+<msg timestamp="20200419 17:05:41.934" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200419 17:05:41.385" endtime="20200419 17:05:41.934"></status>
 </kw>
-<msg timestamp="20200419 16:40:04.826" level="FAIL">Element with locator '//*[@name='username']' not found.</msg>
-<status status="FAIL" starttime="20200419 16:40:04.270" endtime="20200419 16:40:04.826"></status>
+<msg timestamp="20200419 17:05:41.942" level="FAIL">Element with locator '//*[@name='username']' not found.</msg>
+<status status="FAIL" starttime="20200419 17:05:41.372" endtime="20200419 17:05:41.942"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -46,10 +47,10 @@
 <arg>//*[@name='username']</arg>
 <arg>${teacher_credentials}</arg>
 </arguments>
-<msg timestamp="20200419 16:40:14.864" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
-<status status="PASS" starttime="20200419 16:40:14.864" endtime="20200419 16:40:15.079"></status>
+<msg timestamp="20200419 17:05:51.961" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
+<status status="PASS" starttime="20200419 17:05:51.960" endtime="20200419 17:05:52.145"></status>
 </kw>
-<status status="PASS" starttime="20200419 16:40:04.269" endtime="20200419 16:40:15.079"></status>
+<status status="PASS" starttime="20200419 17:05:41.372" endtime="20200419 17:05:52.145"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
@@ -66,10 +67,10 @@
 <arg>//*[@name='password']</arg>
 <arg>${teacher_credentials}</arg>
 </arguments>
-<msg timestamp="20200419 16:40:15.080" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='password']'.</msg>
-<status status="PASS" starttime="20200419 16:40:15.080" endtime="20200419 16:40:15.235"></status>
+<msg timestamp="20200419 17:05:52.145" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='password']'.</msg>
+<status status="PASS" starttime="20200419 17:05:52.145" endtime="20200419 17:05:52.270"></status>
 </kw>
-<status status="PASS" starttime="20200419 16:40:15.079" endtime="20200419 16:40:15.236"></status>
+<status status="PASS" starttime="20200419 17:05:52.145" endtime="20200419 17:05:52.270"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
@@ -84,10 +85,10 @@
 <arguments>
 <arg>//*[@id="page_login"]/div[2]/form/div[3]/button</arg>
 </arguments>
-<msg timestamp="20200419 16:40:15.237" level="INFO">Clicking element '//*[@id="page_login"]/div[2]/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20200419 16:40:15.236" endtime="20200419 16:40:15.300"></status>
+<msg timestamp="20200419 17:05:52.271" level="INFO">Clicking element '//*[@id="page_login"]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20200419 17:05:52.271" endtime="20200419 17:05:52.373"></status>
 </kw>
-<status status="PASS" starttime="20200419 16:40:15.236" endtime="20200419 16:40:15.300"></status>
+<status status="PASS" starttime="20200419 17:05:52.271" endtime="20200419 17:05:52.373"></status>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <doc>Runs the specified keyword and retries if it fails.</doc>
@@ -104,42 +105,225 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200419 16:40:15.974" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200419 16:40:15.325" endtime="20200419 16:40:15.974"></status>
+<msg timestamp="20200419 17:05:52.994" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200419 17:05:52.400" endtime="20200419 17:05:52.994"></status>
 </kw>
-<msg timestamp="20200419 16:40:15.976" level="FAIL">Page should have contained element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a' but did not.</msg>
-<status status="FAIL" starttime="20200419 16:40:15.300" endtime="20200419 16:40:15.977"></status>
+<msg timestamp="20200419 17:05:52.997" level="FAIL">Page should have contained element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a' but did not.</msg>
+<status status="FAIL" starttime="20200419 17:05:52.374" endtime="20200419 17:05:52.997"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
 </arguments>
-<msg timestamp="20200419 16:40:26.000" level="INFO">Current page contains element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a'.</msg>
-<status status="PASS" starttime="20200419 16:40:25.991" endtime="20200419 16:40:26.000"></status>
+<msg timestamp="20200419 17:06:03.011" level="INFO">Current page contains element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20200419 17:06:03.002" endtime="20200419 17:06:03.011"></status>
 </kw>
-<status status="PASS" starttime="20200419 16:40:15.300" endtime="20200419 16:40:26.000"></status>
+<status status="PASS" starttime="20200419 17:05:52.374" endtime="20200419 17:06:03.011"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:05:34.227" endtime="20200419 17:06:03.011"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200419 16:40:26.001" endtime="20200419 16:40:26.091"></status>
+<status status="PASS" starttime="20200419 17:06:03.011" endtime="20200419 17:06:03.113"></status>
 </kw>
-<status status="PASS" starttime="20200419 16:39:54.695" endtime="20200419 16:40:26.091" critical="yes"></status>
+<status status="PASS" starttime="20200419 17:05:34.226" endtime="20200419 17:06:03.113" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200419 16:39:54.452" endtime="20200419 16:40:26.093"></status>
+<test id="s1-s1-t2" name="Logout as a Teacher">
+<kw name="login_as_a_teacher" library="custom_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200419 17:06:03.116" level="INFO">Opening browser 'chrome' to base url 'https://demo30-qa.acceleratelearning.com'.</msg>
+<status status="PASS" starttime="20200419 17:06:03.116" endtime="20200419 17:06:13.129"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200419 17:06:13.130" endtime="20200419 17:06:13.336"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>input text</arg>
+<arg>//*[@name='username']</arg>
+<arg>${teacher_credentials}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name='username']</arg>
+<arg>${teacher_credentials}</arg>
+</arguments>
+<msg timestamp="20200419 17:06:13.337" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200419 17:06:13.924" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200419 17:06:13.348" endtime="20200419 17:06:13.925"></status>
+</kw>
+<msg timestamp="20200419 17:06:13.925" level="FAIL">Element with locator '//*[@name='username']' not found.</msg>
+<status status="FAIL" starttime="20200419 17:06:13.337" endtime="20200419 17:06:13.925"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name='username']</arg>
+<arg>${teacher_credentials}</arg>
+</arguments>
+<msg timestamp="20200419 17:06:23.960" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='username']'.</msg>
+<status status="PASS" starttime="20200419 17:06:23.959" endtime="20200419 17:06:24.139"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:13.336" endtime="20200419 17:06:24.139"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>input text</arg>
+<arg>//*[@name='password']</arg>
+<arg>${teacher_credentials}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name='password']</arg>
+<arg>${teacher_credentials}</arg>
+</arguments>
+<msg timestamp="20200419 17:06:24.140" level="INFO">Typing text 'qa_teacher' into text field '//*[@name='password']'.</msg>
+<status status="PASS" starttime="20200419 17:06:24.140" endtime="20200419 17:06:24.264"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:24.140" endtime="20200419 17:06:24.264"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>click element</arg>
+<arg>//*[@id="page_login"]/div[2]/form/div[3]/button</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="page_login"]/div[2]/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20200419 17:06:24.265" level="INFO">Clicking element '//*[@id="page_login"]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20200419 17:06:24.265" endtime="20200419 17:06:24.382"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:24.264" endtime="20200419 17:06:24.382"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>page should contain element</arg>
+<arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200419 17:06:25.033" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200419 17:06:24.409" endtime="20200419 17:06:25.033"></status>
+</kw>
+<msg timestamp="20200419 17:06:25.034" level="FAIL">Page should have contained element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a' but did not.</msg>
+<status status="FAIL" starttime="20200419 17:06:24.383" endtime="20200419 17:06:25.034"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
+</arguments>
+<msg timestamp="20200419 17:06:35.063" level="INFO">Current page contains element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20200419 17:06:35.053" endtime="20200419 17:06:35.063"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:24.383" endtime="20200419 17:06:35.063"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:03.115" endtime="20200419 17:06:35.064"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>click element</arg>
+<arg>//*[@id="root"]/div/header/div/div/div</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="root"]/div/header/div/div/div</arg>
+</arguments>
+<msg timestamp="20200419 17:06:35.064" level="INFO">Clicking element '//*[@id="root"]/div/header/div/div/div'.</msg>
+<status status="PASS" starttime="20200419 17:06:35.064" endtime="20200419 17:06:35.122"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:35.064" endtime="20200419 17:06:35.122"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>click element</arg>
+<arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a</arg>
+</arguments>
+<msg timestamp="20200419 17:06:35.123" level="INFO">Clicking element '//*[@id="root"]/div/header/div/div/div/div[3]/div/div/div[1]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20200419 17:06:35.123" endtime="20200419 17:06:35.214"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:35.122" endtime="20200419 17:06:35.215"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1min</arg>
+<arg>10s</arg>
+<arg>page should contain</arg>
+<arg>Sign in to STEMscopes</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Sign in to STEMscopes</arg>
+</arguments>
+<msg timestamp="20200419 17:06:35.232" level="INFO">Current page contains text 'Sign in to STEMscopes'.</msg>
+<status status="PASS" starttime="20200419 17:06:35.216" endtime="20200419 17:06:35.232"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:35.215" endtime="20200419 17:06:35.232"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200419 17:06:35.233" endtime="20200419 17:06:35.326"></status>
+</kw>
+<status status="PASS" starttime="20200419 17:06:03.114" endtime="20200419 17:06:35.326" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200419 17:05:33.993" endtime="20200419 17:06:35.328"></status>
 </suite>
-<status status="PASS" starttime="20200419 16:39:54.421" endtime="20200419 16:40:26.094"></status>
+<status status="PASS" starttime="20200419 17:05:33.967" endtime="20200419 17:06:35.330"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Smoke Test">Smoke Test</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Login Teacher">Smoke Test.Login Teacher</stat>
+<stat pass="2" fail="0" id="s1" name="Smoke Test">Smoke Test</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Smoke Teacher">Smoke Test.Smoke Teacher</stat>
 </suite>
 </statistics>
 <errors>
